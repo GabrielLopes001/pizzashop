@@ -5,6 +5,7 @@ import { SingIn } from '@/pages/auth/sing-in'
 
 import { AppLayout } from './pages/_layout/app'
 import { AuthLayout } from './pages/_layout/auth'
+import { Orders } from './pages/app/orders/orders'
 import { SingUp } from './pages/auth/sing-up'
 
 export const router = createBrowserRouter([
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
       {
         path: '/',
         element: <DashBoard />,
+      },
+      {
+        path: '/orders',
+        element: <Orders />,
       },
     ],
   },
